@@ -79,3 +79,13 @@ img.sahrul {
 img.sahrul.munculkansahrul {
     top: -10px;
 }
+
+#parapengembang {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
