@@ -6,32 +6,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pukul Sahrul</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
     </head>
     <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
-        <div class="notif">
-            <button type="button" onclick="mulai()">Start</button>
-            <div class="score">
-                <h2>Score</h2>
-                <h1 class="inti-score">0</h1>
+        <section id="main" class="">
+            <div class="notif">
+                <button type="button" onclick="mulai()">Start</button>
+                <div class="score">
+                    <h2>Score</h2>
+                    <h1 class="inti-score">0</h1>
+                </div>
             </div>
-        </div>
-        <div class="kotakan">
-            <div class="tanah tanah1"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
-            <div class="tanahkosong tanah2"></div>
-            <div class="tanah tanah3"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
-            <div class="tanahkosong tanah4"></div>
-            <div class="tanah tanah5"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
-            <div class="tanahkosong tanah6"></div>
-            <div class="tanah tanah7"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
-            <div class="tanahkosong tanah8"></div>
-            <div class="tanah tanah9"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
-        </div>
-        <div class="footer">Create by <a href="#creator">Para Pengembang</a></div>
-        <section id="parapengembang">
+            <div class="kotakan">
+                <div class="tanah tanah1"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanahkosong tanah2"></div>
+                <div class="tanah tanah3"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanahkosong tanah4"></div>
+                <div class="tanah tanah5"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanahkosong tanah6"></div>
+                <div class="tanah tanah7"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanahkosong tanah8"></div>
+                <div class="tanah tanah9"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+            </div>
+            <div class="footer">Create by _<a id="tombolcreator" href="#creator"> Para Pengembang </a>_</div>
+        </section>
+
+        <section id="creator" class="none">
+            <div id="tombolhome" class="contact home">
+                <a href="#main">
+                    <i class="fas fa-home"> Back To Home</i>
+                </a>
+            </div>
             <div class="container">
                 <div class="hero">
-                    <img src="" alt="" />
-                    h
+                    <img src="" alt="Gaada Gambarnya" />
+                    <caption>
+                        Bengak Dev
+                    </caption>
+                    <div class="contact-sosmed">
+                        <div class="contact email">
+                            <a href="#">
+                                <i class="fas fa-at"></i>
+                            </a>
+                        </div>
+                        <div class="contact facebook">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="contact instagram">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero">
+                    <img src="img/hero2.jpeg" alt="Moh Amirullah" />
+                    <caption>
+                        Moh Amirullah
+                    </caption>
+                    <div class="contact-sosmed">
+                        <div class="contact email">
+                            <a href="#">
+                                <i class="fas fa-at"></i>
+                            </a>
+                        </div>
+                        <div class="contact facebook">
+                            <a target="_blank" href="https://www.facebook.com/irull.kerenn">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="contact instagram">
+                            <a target="_blank" href="https://www.instagram.com/irullah_/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

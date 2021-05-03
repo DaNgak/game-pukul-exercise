@@ -8,9 +8,19 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
+    background-color: cornsilk;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .notif {
@@ -48,14 +58,12 @@ body {
     flex-wrap: wrap;
     cursor: crosshair;
     cursor: url("img/BONK-removebgfix.png"), auto;
-    border: 1px solid black;
     background-color: aqua;
 }
 
 .tanah {
     width: 200px;
     height: 200px;
-    border: 1px solid black;
     margin: 1rem 0;
     background-image: url(img/tanahfix.png);
     background-size: cover;
@@ -80,12 +88,90 @@ img.sahrul.munculkansahrul {
     top: -10px;
 }
 
-#parapengembang {
+.footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+}
+
+section#creator {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     overflow: hidden;
-    
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section#main.none,
+section#creator.none {
+    display: none;
+}
+
+.container .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+div.contact.home {
+    width: auto;
+    margin: 2rem 0;
+}
+
+div.contact.home a {
+    line-height: 50px;
+    padding: 0 1rem;
+}
+
+.container .hero img {
+    width: 500px;
+    height: 450px;
+    border: 2px solid coral;
+}
+
+.contact-sosmed {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.4), -1px -1px 3px rgba(236, 84, 105, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+}
+
+.contact a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: rgba(236, 84, 105, 1);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }

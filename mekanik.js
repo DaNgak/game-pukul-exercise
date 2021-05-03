@@ -1,8 +1,22 @@
+const tombolhome = document.getElementById("tombolhome");
+const main = document.getElementById("main");
+const tombolcreator = document.getElementById("tombolcreator");
+const creator = document.getElementById("creator");
 const start = document.querySelector(".button-start");
 const sahrul = document.querySelectorAll("img");
 const rip = document.querySelectorAll(".rip");
 const score = document.querySelector(".inti-score");
 let indexrandom, indexsebelumnya, selesai, skor;
+
+tombolcreator.addEventListener("click", function () {
+    main.classList.add("none");
+    creator.classList.remove("none");
+});
+
+tombolhome.addEventListener("click", function () {
+    main.classList.remove("none");
+    creator.classList.add("none");
+});
 
 function posisirandom(sahrul) {
     indexrandom = Math.floor(Math.random() * sahrul.length);
