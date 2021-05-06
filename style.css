@@ -290,9 +290,6 @@ div.contact.home a {
 }
 
 @media (min-width: 359px) and (max-width: 767px) {
-    body {
-        overflow: auto;
-    }
     #main {
         display: flex;
         flex-direction: column;
@@ -309,7 +306,7 @@ div.contact.home a {
     }
     .tanah {
         width: 150px;
-        height: 150px;
+        height: 125px;
         margin: 0;
     }
 
@@ -374,8 +371,7 @@ div.contact.home a {
         width: 100%;
     }
     .footer {
-        position: absolute;
-        bottom: 0;
+        position: static;
         margin: 0.5rem 0;
     }
 }
