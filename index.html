@@ -7,26 +7,37 @@
         <title>Pukul Sahrul</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     </head>
     <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
         <section id="main" class="">
             <div class="notif">
-                <button type="button" onclick="mulai()">Start</button>
+                <div class="set-durasi">
+                    <button type="button" onclick="getDuration()">Durasi</button>
+                    <p>
+                        Durasi Saat Ini <br />
+                        <span id="duration">10</span> Detik
+                    </p>
+                </div>
+
+                <button class="buttontengah" type="button" onclick="mulai()">Start</button>
                 <div class="score">
                     <h2>Score</h2>
                     <h1 class="inti-score">0</h1>
                 </div>
             </div>
             <div class="kotakan">
-                <div class="tanah tanah1"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanah tanah1"><div class="sahrul"></div></div>
                 <div class="tanahkosong tanah2"></div>
-                <div class="tanah tanah3"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanah tanah3"><div class="sahrul"></div></div>
                 <div class="tanahkosong tanah4"></div>
-                <div class="tanah tanah5"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanah tanah5"><div class="sahrul"></div></div>
                 <div class="tanahkosong tanah6"></div>
-                <div class="tanah tanah7"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanah tanah7"><div class="sahrul"></div></div>
                 <div class="tanahkosong tanah8"></div>
-                <div class="tanah tanah9"><img class="sahrul" src="img/sahrol_fix-removebg-preview.png" alt="Gambar Sahrul" /></div>
+                <div class="tanah tanah9"><div class="sahrul"></div></div>
+                <div class="tanah tanahkosong tanah10"><div class="sahrul"></div></div>
             </div>
             <div class="footer">Create by _<a id="tombolcreator" href="#creator"> Para Pengembang </a>_</div>
         </section>
@@ -62,7 +73,7 @@
                     </div>
                 </div>
                 <div class="hero">
-                    <img src="img/hero2.jpeg" alt="Moh Amirullah" />
+                    <img src="img/erol.jpeg" alt="Moh Amirullah" />
                     <caption>
                         Moh Amirullah
                     </caption>
@@ -73,12 +84,12 @@
                             </a>
                         </div>
                         <div class="contact facebook">
-                            <a target="_blank" href="https://www.facebook.com/irull.kerenn">
+                            <a href="#">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </div>
                         <div class="contact instagram">
-                            <a target="_blank" href="https://www.instagram.com/irullah_/">
+                            <a href="#">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>

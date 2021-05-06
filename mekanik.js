@@ -3,10 +3,12 @@ const main = document.getElementById("main");
 const tombolcreator = document.getElementById("tombolcreator");
 const creator = document.getElementById("creator");
 const start = document.querySelector(".button-start");
-const sahrul = document.querySelectorAll("img");
+const sahrul = document.querySelectorAll(".sahrul");
 const rip = document.querySelectorAll(".rip");
 const score = document.querySelector(".inti-score");
+const confirmdetik = document.getElementById("duration");
 let indexrandom, indexsebelumnya, selesai, skor;
+var durasi = 10000;
 
 tombolcreator.addEventListener("click", function () {
     main.classList.add("none");
@@ -17,6 +19,18 @@ tombolhome.addEventListener("click", function () {
     main.classList.remove("none");
     creator.classList.add("none");
 });
+
+function getDuration() {
+    durasi = prompt("Masukkan Detik = ");
+    let isNumber = Number(durasi);
+    if (isNumber) {
+        confirmdetik.innerHTML = durasi;
+        durasi = durasi * 1000;
+    } else {
+        confirmdetik.innerHTML = 10;
+        durasi = 10000;
+    }
+}
 
 function posisirandom(sahrul) {
     indexrandom = Math.floor(Math.random() * sahrul.length);
@@ -63,10 +77,11 @@ function callback() {
     skor = 0;
     selesai = false;
     score.innerHTML = skor;
+    console.log(durasi);
     munculkanSiSahrul();
     setTimeout(() => {
         selesai = true;
-    }, 10000);
+    }, durasi);
 }
 
 function mulai() {
